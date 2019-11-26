@@ -19,15 +19,16 @@
     "@vue/cli-plugin-pwa": "^4.0.0",
     "@vue/cli-plugin-unit-jest": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
-    "@vue/eslint-config-prettier": "^5.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-eslint": "^10.0.3",
+    "buefy": "^0.8.8",
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.3.2",
     "eslint": "^5.16.0",
-    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.12.0",
-    "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
+    "vue-cli-plugin-coffeescript": "^0.0.3",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.2",
     "webpack-assets-manifest": "^3.1.1"
@@ -38,8 +39,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "@vue/prettier"
+      "plugin:vue/essential"
     ],
     "rules": {},
     "parserOptions": {
@@ -56,6 +56,9 @@
         }
       }
     ]
+  },
+  "prettier": {
+    "singleQuote": true
   },
   "postcss": {
     "plugins": {
