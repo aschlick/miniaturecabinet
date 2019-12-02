@@ -15,4 +15,6 @@ Rails.application.routes.draw do
         registrations: 'registrations'
       }
   end
+
+  match '*path', to: 'frontend#index', via: :get
 end

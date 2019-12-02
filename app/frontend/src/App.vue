@@ -1,28 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <TitleBar :loggedIn="loggedIn"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
+import TitleBar from './components/TitleBar'
+import auth from './services/auth'
 
 export default {
-  name: "Miniature Cabinet",
+  name: "App",
   components: {
-
+    TitleBar
+  },
+  data: () => {
+    return {
+      loggedIn: !!auth.token
+    }
   }
-};
-</script>
-
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
-</style>
+</script>
