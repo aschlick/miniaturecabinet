@@ -24,7 +24,7 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "coffee-loader": "^0.9.0",
     "coffeescript": "^2.3.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-coffeescript": "^0.0.3",
     "vue-template-compiler": "^2.6.10",
